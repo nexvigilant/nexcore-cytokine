@@ -1,0 +1,24 @@
+
+[package]
+name = "nexcore-cytokine"
+version = "1.0.0"
+edition = "2024"
+authors = ["NexVigilant Team <team@nexvigilant.com>"]
+license = "LicenseRef-Proprietary"
+description = "Typed event signaling system based on immune cytokine patterns"
+
+[dependencies]
+nexcore-error = { workspace = true }
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0.120" }
+nexcore-chrono = { workspace = true }
+tokio = { version = "1.38.0", features = ["full"] }
+tracing = { version = "0.1.40" }
+
+[dev-dependencies]
+tokio = { version = "1.38.0", features = ["full"] }
+
+
+[lints]
+workspace = true
